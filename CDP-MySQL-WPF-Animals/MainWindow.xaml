@@ -8,8 +8,15 @@
         Title="MainWindow" Height="450" Width="800" MinHeight="360" MinWidth="600" MaxWidth="800" MaxHeight="600">
   <DockPanel>
     <Menu DockPanel.Dock="Top" HorizontalAlignment="Left" VerticalAlignment="Top" Width="793">
-      <MenuItem x:Name="FileMenu" Header="_File" />
-      <MenuItem x:Name="HelpMenu" Header="_Help" />
+      <MenuItem x:Name="FileMenu" Header="_File" >
+        <MenuItem x:Name="FileMenuExit" Header="E_xit"/>
+      </MenuItem>
+      <MenuItem x:Name="AnimalsMenu" Header="_Animals" />
+      <MenuItem x:Name="UsersMenu" Header="_Users" />
+      <MenuItem x:Name="LocationsMenu" Header="_Locations" />
+      <MenuItem x:Name="HelpMenu" Header="_Help">
+        <MenuItem x:Name="HelpMenuAbout">_About</MenuItem>
+      </MenuItem>
     </Menu>
 
     <StatusBar DockPanel.Dock="Bottom">
